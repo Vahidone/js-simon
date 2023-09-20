@@ -38,6 +38,8 @@ setTimeout(function () {
     }
   }
 
+  outputResult.textContent = risultato;
+
 
 }, 5000);
 
