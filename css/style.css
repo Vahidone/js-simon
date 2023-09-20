@@ -48,3 +48,17 @@ h3 {
   width: 50%;
   height: 400px;
 }
+.casual-numbers,
+.print-result {
+  margin-top: 100px;
+  font-size: 2rem;
+  color: white;
+  display: inline-block;
+}
+.casual-numbers {
+  background-color: red;
+}
+
+.print-result {
+  background-color: green;
+}
