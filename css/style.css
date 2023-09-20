@@ -1,0 +1,50 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug {
+  background-color: rgb(226, 177, 177);
+  border: 1px solid black;
+  min-height: 50px;
+}
+body {
+  background-color: rgb(172, 210, 211);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: cadetblue;
+  text-align: center;
+  padding-top: 50px;
+ 
+
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  width: 100%;
+  color: blue;
+}
+h3 {
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+.elements-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100PX;
+}
+
+.quiz-space,
+.result-space {
+  width: 50%;
+  height: 400px;
+}
