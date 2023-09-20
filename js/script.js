@@ -14,5 +14,19 @@ for (i = 0; i < 5; i++) {
 }
 
 
+setTimeout(function () {
+
+  casualNumbers.innerHTML = '';
+
+  for (i = 0; i < 5; i++) {
+    const numberUser = parseInt(prompt('inserisci un numero' + (i + 1)));
+    guessNumbers.push(numberUser);
+    
+    
+
+  }
+
+
+}, 5000);
 
 
