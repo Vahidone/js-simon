@@ -1,8 +1,9 @@
 
 // selezionare gli elementi che ci servono 
-const casualNumbers = document.querySelector('.casual-numbers');
-const outputResult = document.querySelector('.print-result');
 
+const outputResult = document.querySelector('.print-result');
+const casualNumbers = document.querySelector('.casual-numbers');
+const bottone = document.querySelector('.bottone');
 
 let casualNumbersArray = [];
 let guessNumbers = [];
@@ -13,10 +14,15 @@ for (i = 0; i < 5; i++) {
   casualNumbers.innerHTML += numeroCasuale + '  ';
 }
 
+bottone.addEventListener('click', function (){
+
+  location.reload();
+});
 
 setTimeout(function () {
 
-  casualNumbers.textContent = '';
+  casualNumbers.innerHTML = '';
+  
 
   for (i = 0; i < 5; i++) {
     const numberUser = parseInt(prompt('inserisci un numero' + (i + 1)));
@@ -30,14 +36,14 @@ setTimeout(function () {
     if (guessNumbers.includes(numeroCasuale)) correctNumber++;
   }
   
-  let risultato = 'hai indovinato' + correctNumber + 'numeri';
+  let risultato = 'hai indovinato' + ' ' + correctNumber + ' ' + 'numeri' + ' ' + ' ' + ':';
   for (i = 0; i < guessNumbers.length; i++) {
     const numberUser = guessNumbers[i];
     if (casualNumbersArray.includes(numberUser)) {
       risultato += numberUser + ' ';
     }
   }
-
+  
   outputResult.textContent = risultato;
 
 
