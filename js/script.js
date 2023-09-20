@@ -31,8 +31,13 @@ setTimeout(function () {
   }
   
   let risultato = 'hai indovinato' + correctNumber + 'numeri';
+  for (i = 0; i < guessNumbers.length; i++) {
+    const numberUser = guessNumbers[i];
+    if (casualNumbersArray.includes(numberUser)) {
+      risultato += numberUser + ' ';
+    }
+  }
 
- 
 
 }, 5000);
 
