@@ -48,6 +48,12 @@ h3 {
   width: 50%;
   height: 400px;
 }
+.casual-space {
+  background-color: rgb(190, 190, 144);
+}
+.result-space {
+  background-color: pink;
+}
 .casual-numbers,
 .print-result {
   margin-top: 100px;
