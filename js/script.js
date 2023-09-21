@@ -1,5 +1,5 @@
 
-// selezionare gli elementi 
+//  selezionare gli elementi  
 
 const outputResult = document.querySelector('.print-result');
 const casualNumbers = document.querySelector('.casual-numbers');
